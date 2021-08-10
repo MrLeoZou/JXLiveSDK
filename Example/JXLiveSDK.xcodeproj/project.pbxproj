@@ -346,10 +346,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JXLiveSDK_Example/Pods-JXLiveSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JXBifrost/JXBifrost.framework",
+				"${BUILT_PRODUCTS_DIR}/JXLiveCoreSDK/JXLiveCoreSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/JXLiveSDK/JXLiveSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXBifrost.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXLiveCoreSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXLiveSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,27 @@
+PODS:
+  - JXBifrost (0.1.0)
+  - JXLiveCoreSDK (0.1.1)
+  - JXLiveSDK (0.1.0):
+    - JXBifrost
+    - JXLiveCoreSDK
+
+DEPENDENCIES:
+  - JXLiveSDK (from `../`)
+
+SPEC REPOS:
+  https://github.com/MrLeoZou/componentizationDemo:
+    - JXBifrost
+    - JXLiveCoreSDK
+
+EXTERNAL SOURCES:
+  JXLiveSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JXBifrost: 14d3e4068d974ecdfda78881d0027735b46e7b3e
+  JXLiveCoreSDK: e28adf4189d7abb5b43d6258da5cd471535f41f9
+  JXLiveSDK: 2ffc20b5f0a6746e5e238e1bf5f1e710cd17bc8c
+
+PODFILE CHECKSUM: 105bbc04c848f24d99fafc0891734f87c49e50bd
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,6 @@
+framework module JXLiveCoreSDK {
+  umbrella header "JXLiveCoreSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
