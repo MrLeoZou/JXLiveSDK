@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'JXLiveSDK_Example' do
+  pod 'JXLiveSDK', :path => '../'
+
+  target 'JXLiveSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
