@@ -7,14 +7,21 @@
 
 #import "JXLiveSdkManager.h"
 #import <JXLiveCoreSDK/JXLiveCoreSDK.h>
-#import "JXLiveSDKService.h"
 #import "JXLiveViewController.h"
+#import <JXBifrost/BifrostHeader.h>
+#import "JXLiveSDKService.h"
 
-@interface JXLiveSdkManager ()<JXLiveSDKProtocol>
+@interface JXLiveSdkManager ()<JXLiveSDKProtocol, BifrostModuleProtocol>
 
 @end
 
 @implementation JXLiveSdkManager
+
++ (void)load {
+    BFRegister(JXLiveSDKProtocol);
+}
+
+- (void)setup {}
 
 static JXLiveSdkManager *manager = nil;
 + (JXLiveSdkManager *)sharedInstance {
